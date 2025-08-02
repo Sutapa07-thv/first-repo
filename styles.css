@@ -49,6 +49,24 @@ input{
 a:hover{
     color:blue;
 }
+
+#inner{
+    position:absolute;
+    left:110px;
+    top:115px;
+    border-radius: 50%;
+    box-shadow:4px 4px 4px black;
+    animation:circle 4s linear infinite;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
 @media screen and (max-width:450px){
     main{
         transform: none;
